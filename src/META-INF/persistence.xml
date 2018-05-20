@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="PadariaRealPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>br.padaria.modelo.Cliente</class>
+    <class>br.padaria.modelo.Fornecedor</class>
+    <class>br.padaria.modelo.Ficha</class>
+    <class>br.padaria.modelo.FormaPgto</class>
+    <class>br.padaria.modelo.Categoria</class>
+    <class>br.padaria.modelo.Orcamento</class>
+    <class>br.padaria.modelo.OrcamentoItem</class>
+    <class>br.padaria.modelo.Produto</class>
+    <class>br.padaria.modelo.Venda</class>
+    <class>br.padaria.modelo.VendaItem</class>
+    <class>br.padaria.modelo.Vendedor</class>
+    <class>br.padaria.modelo.ContasReceber</class>
+    <class>br.padaria.modelo.ContasPagar</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/bd_padaria"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="rocha"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
